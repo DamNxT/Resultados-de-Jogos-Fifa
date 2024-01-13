@@ -1,0 +1,251 @@
+:root{
+    --primary-color: #1F1E1E;
+    --second-color:#c96944;
+    --text-menu:#fff;
+    --hover-color: #3C3939;
+    --bg-color:#323777;
+    --bg-color-hover:#6970d4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* outline: 1px solid black;   */
+}
+.header{
+    background-color: var(--bg-color);
+    display: flex;  
+    justify-content: space-evenly;  
+    padding: 5px 0;            
+}
+#logo{
+    padding: 10px;
+    color:var(--second-color) ;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;        
+    width: 50%;
+}
+a{
+    text-decoration: none;
+    color:var(--text-menu);
+    cursor: pointer;
+    
+}
+a:hover{
+    transition: 0.4s;
+    text-decoration: underline;
+    font-size: 20px;
+}
+#card-board{
+    object-fit: cover;
+    width: 100%;
+    height: 40vh;        
+}
+h2{
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+.gp{
+    list-style: none;
+    border: 1px none gray;    
+    box-shadow: gray 2px 2px;
+    border-radius: 25px;    
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    color: var(--primary-color);
+}
+#bold{
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.gp:hover{
+    transition: 0.5s;
+    transform: scale(1.05, 1);
+    cursor: pointer;
+    background-color:var(--bg-color-hover);
+}
+#jogos{
+    margin-top: 30px;
+}
+.tabela-jogos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.jogos{
+    padding: 20px;
+    border: 1px none gray;
+    border-radius: 10PX;
+    box-shadow: gray 1px 2px;
+    list-style: none;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;    
+    text-align: left;  
+}
+.jogos h3{
+    width: 100%;
+    text-align: center;
+}
+.jogos p{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: self-start;
+    margin-top: 50px;
+    padding: 40px 0 ;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-menu);
+}
+footer h1{
+    font-size: 65px;
+    color:var(--second-color) ;
+}
+.social-media h3{
+    font-size: 20px;
+    text-transform: uppercase;   
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about h3{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#f-link:hover{
+    transition: 0.4s;
+    text-decoration: underline;
+    font-size: 16.5px;
+}
+
+
+@media (max-width: 1024px){
+#card-board{
+    width: 100%;    
+    height: 40vh;
+}
+.jogos{    
+    width: 75%; 
+    padding: 10px;
+}
+}
+
+@media (max-width: 768px){    
+.gp{                
+    width: 70%;    
+    height: 180px;
+    font-size: 22px;
+} 
+.jogos{    
+    width: 90%; 
+    padding: 10px;
+}
+}
+
+@media (max-width: 425px){
+#logo{
+    font-size: 18px;
+    padding: 10px;
+}
+.menu{    
+    padding: 0 150px;
+    font-size: 18px;    
+}
+#card-board{
+    width: 100%;    
+    height: 20vh;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gp{    
+    font-size: 18px;
+    width: 80%;    
+    height: 150px;
+}
+.jogos{       
+    align-items: center;
+    width: 90%; 
+    padding: 10px;
+}
+}
+
+@media (max-width: 375px){
+#logo{
+    font-size: 15px;
+    margin: 10px;    
+    position: relative;
+    left: -40px;
+    width: 15%;
+}
+.menu{
+    padding:0 10px;
+    width: 50%;    
+}
+a{
+    font-size: 11px;
+}
+a:hover{
+    font-size: 14px;
+}
+#card-board{
+    width: 100%;    
+    height: 20vh;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gp{
+    font-size: 16px;
+    width: 90%;    
+    height: 140px;
+}
+.jogos{    
+    width: 90%; 
+    height: 40px;
+    gap: 10px;
+    padding: 10px;
+}
+.jogos p{
+    width: 20px;    
+}
+}
+
