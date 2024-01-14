@@ -204,6 +204,12 @@ footer h1{
     width: 90%; 
     padding: 10px;
 }
+.responsividade h3{
+   font-size: 14px;
+}
+.responsividade a{
+    font-size: 11px;
+}
 }
 
 @media (max-width: 375px){
@@ -247,5 +253,14 @@ a:hover{
 .jogos p{
     width: 20px;    
 }
+.responsividade h3{
+    font-size: 12px;
+ }
+ .responsividade a{
+     font-size: 10px;
+ }
+ .responsividade h1{
+    font-size: 40px;
+ }
 }
 
